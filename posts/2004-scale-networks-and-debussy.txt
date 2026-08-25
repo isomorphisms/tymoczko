@@ -1,0 +1,20 @@
+Scale Networks and Debussy
+Dmitri Tymoczko
+Journal of Music Theory 48(2), 2004, pp. 219-294
+DOI 10.1215/00222909-48-2-219
+
+What it is
+
+This paper develops a way to think about relationships among scales and applies it to Debussy. It is an important precursor to the later geometry because the basic object of comparison is no longer just an isolated chord: scales themselves can be connected by small changes and organized into networks.
+
+Why it matters for A Geometry of Music
+
+A Geometry of Music later treats modulation as a kind of voice leading between scales or macroharmonies. Scale Networks and Debussy is one of the places where that idea is worked out before the book.
+
+The useful computational idea is that a scale can be treated as an ordered or structured collection whose relation to another scale is represented by motions of individual pitch classes. Distance then belongs to the transformation between collections, not merely to a lookup table of scale names.
+
+This is relevant to enharmonic spelling because the same sounding pitch-class collection can participate in different scale structures and different paths. A representation that stores only the final unordered pitch set will lose some of the information the theory cares about.
+
+Source
+
+Dmitri Tymoczko, "Scale Networks and Debussy," Journal of Music Theory 48(2), 2004, 219-294.
