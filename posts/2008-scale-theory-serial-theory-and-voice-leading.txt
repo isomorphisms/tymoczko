@@ -1,0 +1,22 @@
+Scale Theory, Serial Theory and Voice Leading
+Dmitri Tymoczko
+Music Analysis 27(1), 2008, pp. 1-49
+DOI 10.1111/j.1468-2249.2008.00257.x
+
+What it does
+
+This paper formalizes efficient voice leading and gives procedures for finding maximally efficient voice leadings between arbitrary chords. It also connects scale theory, serial theory, neo-Riemannian theory, jazz tritone substitution, Wagner, Debussy, harmony, and counterpoint.
+
+The important computational idea is that voice leading is not just a qualitative label. It can be treated as an optimization problem over possible matchings between notes in two collections.
+
+Why it matters here
+
+A chord representation should not preselect one voice correspondence. The same pair of pitch collections can support several voice leadings, and the theory can compare their total sizes and other properties.
+
+If tuning is continuous, the same algorithms can operate on real-valued pitch coordinates rather than only integers modulo 12. That makes the geometry compatible with unequal temperament and microtonal values so long as the metric is defined on the chosen pitch space.
+
+For enharmonic spelling, this again suggests separating the sounding coordinate from the notational path. The geometrically shortest voice leading is one derived object; the musically intended spelling or functional interpretation is another.
+
+Source
+
+Dmitri Tymoczko, "Scale Theory, Serial Theory and Voice Leading," Music Analysis 27(1), 2008, 1-49.
