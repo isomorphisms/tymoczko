@@ -1,0 +1,45 @@
+Generalized Voice-Leading Spaces
+Clifton Callender, Ian Quinn, and Dmitri Tymoczko
+Science 320(5874), 2008, pp. 346-348
+DOI 10.1126/science.1153021
+
+This is the formal generalization of the chord-space program.
+
+OPTIC
+
+The paper studies five musical operations commonly ignored when musicians classify pitch sequences:
+
+O  octave shift
+P  permutation
+T  transposition
+I  inversion
+C  cardinality change
+
+Different combinations of these operations generate different equivalence relations. The paper counts 32 equivalence relations on chords and 243 on chord sequences, organized into families of quotient spaces.
+
+Why this matters
+
+There is no single correct notion of "the same chord." C major with a different voicing can be the same under one quotient and different under another. A transposed chord can be identified under T but not under a representation that preserves absolute pitch. Chords of different cardinality can be compared only after choosing machinery that permits it.
+
+This is directly applicable to enharmonic identity. "F-sharp equals G-flat" should itself be an explicit equivalence relation or tuning-dependent projection, not a primitive fact baked into the note type.
+
+Geometry
+
+The quotient spaces generalize the orbifolds in the 2006 Science paper. Chords and chord sequences become points in spaces whose geometry depends on which OPTIC operations have been factored out. Voice leading then supplies paths and distances inside those spaces.
+
+Implementation consequence
+
+Keep equivalence as a parameter or explicit derived relation:
+
+    equivalent under octave?
+    equivalent under voice permutation?
+    equivalent under transposition?
+    equivalent under inversion?
+    equivalent under enharmonic spelling?
+    equivalent under a chosen tuning?
+
+The durable musical value should survive changing those answers.
+
+Source
+
+Clifton Callender, Ian Quinn, and Dmitri Tymoczko, "Generalized Voice-Leading Spaces," Science 320(5874), 2008, 346-348.
