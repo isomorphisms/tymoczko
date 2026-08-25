@@ -1,0 +1,27 @@
+Geometrical Methods in Recent Music Theory
+Dmitri Tymoczko
+Music Theory Online 16(1), 2010
+DOI 10.30535/mto.16.1.7
+
+What it is
+
+This commentary clarifies how continuous voice-leading spaces relate to discrete graphs used elsewhere in recent music theory. Tymoczko emphasizes that discrete voice-leading graphs can be embedded in the broader continuous spaces developed with Clifton Callender and Ian Quinn.
+
+Why it matters for the repository
+
+A discrete representation and a continuous representation do not have to compete.
+
+Twelve equal-tempered pitch classes, a particular chord graph, or a finite lattice can be treated as a selected discrete subset of a continuous ambient pitch/chord space. This is a useful computational architecture:
+
+- preserve continuous pitch values underneath;
+- derive discrete equal-tempered or scale-specific points when needed;
+- derive graph edges from a chosen voice-leading rule;
+- keep the rule and tuning explicit so another discretization can be generated later.
+
+This lets a program use cheap integers where they are valid without asserting that musical pitch is fundamentally integer-valued.
+
+It also makes room for Duffin-style tuning values. A justly tuned, meantone, or otherwise unequal pitch can occupy the same continuous ambient space while a 12-TET rendering remains a particular projection or sampling.
+
+Source
+
+Dmitri Tymoczko, "Geometrical Methods in Recent Music Theory," Music Theory Online 16(1), 2010.
