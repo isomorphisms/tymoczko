@@ -1,0 +1,20 @@
+Stravinsky and the Octatonic: A Reconsideration
+Dmitri Tymoczko
+Music Theory Spectrum 24.1 (2002), pp. 68-102
+DOI 10.1525/mts.2002.24.1.68
+
+This paper argues that the importance of the octatonic scale in Stravinsky has often been overstated. Tymoczko separates genuinely octatonic passages from two other techniques that can look similar on the page: modal uses of nondiatonic minor scales and superpositions of material drawn from different scalar collections.
+
+Why it matters to the later geometry
+
+The paper is an early example of a recurring Tymoczko move: do not identify musical objects merely because a coarse pitch-class classification makes them look alike. Preserve enough structure to distinguish how the notes arise, which collection they belong to, and how voices move.
+
+That is directly relevant to enharmonic spelling. F-sharp and G-flat may collapse to one pitch class in 12-TET, but a theory that wants to recover musical function should not make that collapse irreversible. Scale membership, spelling, and path/context belong beside the pitch-class coordinate.
+
+Source
+
+Princeton publication record and abstract:
+https://collaborate.princeton.edu/en/publications/stravinsky-and-the-octatonic-a-reconsideration/
+
+Oxford Academic issue record:
+https://academic.oup.com/mts/issue/24/1?browseBy=volume
