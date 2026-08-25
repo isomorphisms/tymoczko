@@ -1,0 +1,57 @@
+How Equal Temperament Ruined Harmony (and Why You Should Care)
+Ross W. Duffin
+W. W. Norton, 2007
+ISBN 978-0-393-06227-4
+
+What the book is doing
+
+Duffin argues against treating twelve-tone equal temperament as the inevitable or acoustically neutral endpoint of tuning history. He traces the historical use of meantone, well temperaments, unequal temperaments, and flexible intonation by singers and instrumentalists, and argues that older repertories can lose expressive distinctions when every semitone is forced to exactly the same size.
+
+The numerical issue
+
+Twelve-tone equal temperament divides the octave into twelve equal logarithmic steps. One semitone has frequency ratio
+
+    2^(1/12)
+
+and every pitch can be represented by a logarithmic coordinate. In a ratio-based tuning, however, important intervals may instead be represented by exact rational ratios such as 3:2 for a pure fifth or 5:4 for a pure major third. These two descriptions are naturally connected by cents:
+
+    cents(r) = 1200 log2(r)
+
+So there is no reason to choose globally between ratios and floating-point coordinates. A useful representation can preserve an exact ratio when one exists and also cache or derive its logarithmic/cents coordinate for geometric calculation and comparison.
+
+F-sharp versus G-flat
+
+In twelve-tone equal temperament, F-sharp and G-flat are normally assigned the same sounding frequency. In other tuning systems or in flexible ensemble intonation, enharmonic spellings need not collapse to the same sounding pitch. The difference can depend on tuning system, harmonic context, melodic tendency, and which interval is being made pure or close to pure.
+
+This means that "F-sharp = G-flat" is not a safe foundational identity. It is a contingent equality produced by a particular tuning and interpretation.
+
+The data model should therefore distinguish at least:
+
+- written identity: F-sharp versus G-flat;
+- sounding pitch or log-frequency coordinate;
+- tuning system and reference pitch;
+- exact ratio when the tuning is naturally ratio-defined;
+- cents or floating-point displacement from a reference;
+- harmonic/melodic context when intonation is context-sensitive.
+
+A comma should be representable as an interval, not erased as rounding noise. If two nominally enharmonic notes differ by a syntonic comma, Pythagorean comma, diesis, or some other tuning-specific discrepancy, that difference belongs in the musical object.
+
+Relationship to Tymoczko
+
+Duffin is mostly concerned with what pitches actually sound like and with the historical consequences of tuning choices. Tymoczko is mostly concerned with the geometry of pitch classes, chords, scales, and voice leadings. They meet naturally if pitch is represented continuously.
+
+A ratio can supply an exact acoustical relation. Taking log2 turns multiplication of frequency ratios into addition in pitch space, which is exactly the kind of coordinate system needed for geometric voice-leading calculations. Symbolic spelling can remain separate from both.
+
+That suggests three layers rather than one overloaded note value:
+
+    notation / spelling
+    exact or tuning-relative acoustical value
+    continuous geometric coordinate
+
+No layer should be permitted to silently overwrite the others.
+
+Sources
+
+Ross W. Duffin, How Equal Temperament Ruined Harmony (and Why You Should Care), W. W. Norton, 2007.
+
+The book includes a table of intervals in cents and repeatedly discusses the historical differentiation of sharps, flats, diatonic and chromatic semitones, commas, pure intervals, meantone systems, and equal temperament.
