@@ -1,0 +1,47 @@
+The Geometry of Musical Chords
+Dmitri Tymoczko
+Science 313(5783), 2006, pp. 72-74
+DOI 10.1126/science.1126287
+
+This is the central early geometry paper.
+
+Core construction
+
+A chord is represented as a point in a geometrical space. A voice leading between two chords is represented by a path or line segment connecting their points. Short paths represent efficient voice leadings.
+
+The spaces are quotient spaces: musical equivalences such as octave displacement and permutation of voices identify points that would otherwise be distinct. The resulting spaces are generally non-Euclidean orbifolds.
+
+The Möbius strip
+
+For two-note chords, imposing octave equivalence and ignoring the ordering of the two voices produces a space with the topology of a Möbius strip. This is the concrete source of the "Möbius strip of chords" idea associated with Tymoczko.
+
+Higher-cardinality chords live in higher-dimensional analogues. The geometry exposes special regions corresponding to symmetric or nearly symmetric chords and helps explain why small voice leadings cluster around particular harmonic structures.
+
+What the geometry forgets
+
+A quotient space is useful because it deliberately identifies objects under chosen transformations. That also means it is dangerous to confuse the quotient with the original musical data.
+
+If F-sharp and G-flat are assigned the same sounding pitch, a pure pitch-class geometry can place them at the same point. The spelling distinction must survive elsewhere if it matters. Likewise, a tuning model that gives F-sharp and G-flat different frequencies should feed distinct continuous coordinates into the geometry rather than forcing an equal-tempered collapse beforehand.
+
+Implementation consequence
+
+Keep the full musical object and derive quotient-space coordinates from it. Do not make the quotient-space representative the durable identity of the note or chord.
+
+Useful separation:
+
+    source musical object
+        spelling
+        tuning / ratio / frequency
+        scale and harmonic context
+
+    derived geometric object
+        continuous pitch coordinates
+        equivalence class
+        orbifold coordinate
+        voice-leading path / distance
+
+The derived geometric representation can be recomputed under different equivalence relations without destroying the source information.
+
+Source
+
+Dmitri Tymoczko, "The Geometry of Musical Chords," Science 313(5783), 2006, 72-74.
