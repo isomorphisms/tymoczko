@@ -1,0 +1,30 @@
+Generalizing Musical Intervals
+Dmitri Tymoczko
+Journal of Music Theory 53(2), 2009, pp. 227-254
+DOI 10.1215/00222909-2010-003
+
+What it does
+
+Tymoczko reexamines David Lewin's generalized musical intervals using geometry. A central point is that a musical interval can be better understood in some settings as a particular directed motion or path, rather than as a globally defined transformation that must make sense everywhere in the space.
+
+That distinction matters on curved spaces, spaces with boundaries, and spaces where more than one path can connect the same two points.
+
+Why it matters here
+
+Endpoints do not contain all the musical information.
+
+If a note moves from one pitch to another, the directed path can encode information that disappears if the system stores only the two endpoints or their absolute difference. This is especially useful for spelling and voice leading: two operations may land on the same sounding pitch while representing different alterations, scale-degree motions, or harmonic intentions.
+
+For F-sharp and G-flat, a robust system can therefore distinguish:
+
+- equality of sounding endpoint;
+- equality of spelling;
+- equality of directed path;
+- equality under a chosen tuning;
+- equality after a chosen quotient.
+
+Those are separate questions.
+
+Source
+
+Dmitri Tymoczko, "Generalizing Musical Intervals," Journal of Music Theory 53(2), 2009, 227-254.
