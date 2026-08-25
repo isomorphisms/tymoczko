@@ -1,0 +1,33 @@
+The Consecutive-Semitone Constraint on Scalar Structure: A Link Between Impressionism and Jazz
+Dmitri Tymoczko
+Intégral 11 (1997), pp. 135-179
+
+This is the earliest Tymoczko publication I found in the line that later leads toward A Geometry of Music. It is not yet the Möbius-strip/orbifold paper. The subject is scalar structure: which note collections satisfy a constraint on consecutive semitones, and how that helps connect harmonic practices in Impressionism and jazz.
+
+Why it matters here
+
+The important representation lesson is that a scale is not just a twelve-bit pitch-class set. Its adjacency relations and internal step structure matter. If two scales contain nearly the same pitch classes but organize them differently, that difference should remain visible.
+
+This is already pointing toward the later voice-leading program: musical collections are structured objects connected by constrained motions, not just labels.
+
+For an implementation, preserve at least:
+
+- pitch spelling;
+- cyclic scale order;
+- step sizes;
+- the sounding/log-frequency realization;
+- the tuning or temperament that produced those sizes.
+
+That makes it possible to keep an F-sharp and a G-flat distinct as symbolic/scale positions even if a later equal-tempered realization maps both to the same sounding pitch.
+
+Chronology
+
+This paper is from 1997. I found no Tymoczko papers from the 1980s. A likely source of the 1980s memory is John Roeder's 1987 article "A Geometric Representation of Pitch-Class Series," which belongs to the earlier geometrical music-theory literature that Tymoczko later engages.
+
+Sources
+
+Intégral volume 11:
+https://theory.esm.rochester.edu/integral/11-1997/
+
+Article page:
+https://theory.esm.rochester.edu/integral//11-1997/11-tymoczko/
