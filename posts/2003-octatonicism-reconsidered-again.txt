@@ -1,0 +1,18 @@
+Octatonicism Reconsidered Again
+Dmitri Tymoczko
+Music Theory Spectrum 25(1), 2003, pp. 185-202
+DOI 10.1525/mts.2003.25.1.167
+
+What it is
+
+This is part of the debate following Tymoczko's 2002 paper on Stravinsky and octatonicism. It is less directly geometric than the papers that follow, but it belongs to the intellectual path toward A Geometry of Music because it sharpens the distinction between actual musical organization and an analyst's preferred categorical label.
+
+Why keep it here
+
+The later geometric program depends on choosing equivalence relations carefully. Different choices deliberately forget different information. This earlier debate is a useful warning against declaring two musical objects equivalent simply because one convenient theory groups them together.
+
+For this repository, the analogous rule is straightforward: enharmonic equivalence, pitch-class equivalence, tuning equivalence, and notational equivalence are different relations. None should silently stand in for all the others.
+
+Source
+
+Dmitri Tymoczko, "Octatonicism Reconsidered Again," Music Theory Spectrum 25(1), 2003, 185-202.
