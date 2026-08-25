@@ -1,0 +1,44 @@
+Voice Leadings as Generalized Key Signatures
+Dmitri Tymoczko
+Music Theory Online 11(4), 2005
+DOI 10.30535/mto.11.4.1
+
+This one is especially relevant to the F-sharp / G-flat problem.
+
+Continuous pitch
+
+Tymoczko begins with a continuous numerical pitch space rather than assuming twelve-tone equal temperament. He uses the familiar logarithmic coordinate
+
+    p = 69 + 12 log2(f / 440)
+
+where f is frequency in hertz. Integer values reproduce MIDI note numbers, but non-integers represent arbitrary microtones. Pitch-class space is then formed by identifying pitches an octave apart, giving the circle R / 12Z.
+
+That means his geometry is already compatible with a floating-point or exact real-valued description of pitch. Twelve equal-tempered pitch classes are just twelve familiar points on the circle.
+
+Paths, not only endpoints
+
+The paper's central move is to treat a key signature as a collection of paths in pitch-class space. A path contains more information than a pitch-class interval because it records the route: for example, descending one semitone from C to B is not the same path as ascending eleven semitones even though the endpoints are the same pitch classes.
+
+That is directly useful for enharmonic spelling. F-sharp and G-flat can be represented with:
+
+- a sounding coordinate;
+- a letter/accidental spelling derived from a basic scale;
+- a directed path or alteration from that scale.
+
+Two notes may therefore coincide acoustically in twelve-tone equal temperament without becoming the same notational or voice-leading object.
+
+Key signatures as voice leading
+
+Tymoczko shows that a key signature determines a voice leading from a basic scale to a target scale, and conversely that a voice leading can be expressed as a generalized key signature. He studies minimal voice leading, common-tone retention, and voice crossing.
+
+Implementation consequence
+
+Do not define a note only as an integer 0..11.
+
+A better core can admit continuous pitch coordinates and keep spelling/path information separately. A ratio-defined tuning can first produce a frequency ratio and then map it into this logarithmic coordinate. A cents displacement is simply the same log coordinate at a different scale.
+
+This paper is probably the cleanest bridge between Duffin's tuning concerns and Tymoczko's geometry.
+
+Source
+
+Dmitri Tymoczko, "Voice Leadings as Generalized Key Signatures," Music Theory Online 11(4), 2005.
