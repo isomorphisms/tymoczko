@@ -1,0 +1,19 @@
+Scale Networks and Debussy
+Dmitri Tymoczko
+Journal of Music Theory 48.2 (2004), pp. 219-294
+DOI 10.1215/00222909-48-2-219
+
+This paper develops a way of relating scales by small changes and uses those relations to analyze Debussy. It sits between Tymoczko's earlier scalar work and his later continuous chord/voice-leading geometry.
+
+The important computational idea is that collections can form a network because one scale can be transformed into another by small voice-leading motions. A scale therefore has both an internal structure and a location relative to nearby scales.
+
+This suggests representing scale relations as actual mappings between ordered pitch positions, not merely as set similarity. If two collections share most pitch classes but differ by one small movement, that movement should be stored as a transformation/path.
+
+Enharmonic consequence
+
+A scale-network representation gives F-sharp and G-flat potentially different identities even when they are mapped to the same 12-TET pitch class, because their spelling and role in the source/target scale can differ. Equality of sounding coordinate need not imply equality of path or scale position.
+
+Source
+
+Princeton publication record:
+https://collaborate.princeton.edu/en/publications/scale-networks-and-debussy/
