@@ -1,0 +1,30 @@
+Set-Class Similarity, Voice Leading, and the Fourier Transform
+Dmitri Tymoczko
+Journal of Music Theory 52(2), 2008, pp. 251-272
+DOI 10.1215/00222909-2009-017
+
+What it does
+
+Tymoczko compares two notions of distance between chord types: one based on minimal voice leading and another based on shared interval content expressed through Ian Quinn's Fourier-transform approach.
+
+The paper shows that these are genuinely different constructions even though they can often give surprisingly similar results. Voice-leading distance is presented as the more flexible tool in many contexts.
+
+Why it matters here
+
+"Distance" between musical objects is not a single primitive number. Different metrics answer different questions.
+
+Useful distinct metrics include:
+
+- acoustical distance between sounding pitches;
+- logarithmic/cents distance;
+- voice-leading distance between chords;
+- interval-content similarity;
+- spelling or scale-path distance.
+
+A system that reduces all of these to one float will eventually make incorrect equivalences. A float is useful as the value of a particular metric, but the metric itself needs an identity and provenance.
+
+This is also a warning for comparing F-sharp and G-flat. Their acoustic distance can be zero in 12-TET while their spelling distance or tuning-relative distance is nonzero.
+
+Source
+
+Dmitri Tymoczko, "Set-Class Similarity, Voice Leading, and the Fourier Transform," Journal of Music Theory 52(2), 2008, 251-272.
