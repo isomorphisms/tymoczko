@@ -1,0 +1,20 @@
+Stravinsky and the Octatonic: A Reconsideration
+Dmitri Tymoczko
+Music Theory Spectrum 24(1), 2002, pp. 68-102
+DOI 10.1525/mts.2002.24.1.68
+
+Why it matters
+
+This is Tymoczko's first major published theory article in the lineage that leads toward A Geometry of Music. It is not yet the Möbius-strip paper. Its importance is that it refuses to explain Stravinsky with one privileged collection and instead separates several interacting scalar techniques.
+
+Tymoczko argues that Stravinsky's sound cannot simply be identified with octatonicism. He emphasizes modal uses of non-diatonic minor scales and the superimposition of material drawn from different scalar collections.
+
+Connection to the later geometry
+
+The later book treats scale, macroharmony, centricity, harmony, and voice leading as related but non-identical structures. This 2002 paper is an early example of the same methodological habit: do not collapse several musical phenomena into a single label.
+
+For a computational representation, this argues against storing only a chord name or only a pitch-class set. Keep the active scale or collection, the sounding pitches, and the voice-leading relation as separable information.
+
+Source
+
+Dmitri Tymoczko, "Stravinsky and the Octatonic: A Reconsideration," Music Theory Spectrum 24(1), 2002, 68-102.
