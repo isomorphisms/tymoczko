@@ -1,0 +1,65 @@
+A Geometry of Music: Harmony and Counterpoint in the Extended Common Practice
+Dmitri Tymoczko
+Oxford University Press, 2011
+ISBN 9780195336672
+
+What the book is doing
+
+Tymoczko tries to give a common mathematical language for harmony, scales, and voice leading across a much wider span than eighteenth- and nineteenth-century common-practice tonality. His five recurring features of tonality are:
+
+1. conjunct melodic motion — melodic voices tend to move by short distances;
+2. acoustic consonance — some simultaneous pitch combinations are acoustically smoother/more consonant;
+3. harmonic consistency — the harmonies used in a passage tend to resemble one another structurally;
+4. limited macroharmony — over moderate spans, music usually draws from a limited collection of pitch classes rather than the whole chromatic aggregate;
+5. centricity — some pitches are heard as more stable or central than others.
+
+The important move for this repository is geometric rather than merely classificatory. An n-note chord can be represented by a point in a continuous pitch space. Quotienting by musically irrelevant distinctions — octave, ordering of voices, and sometimes transposition or inversion — produces non-Euclidean quotient spaces/orbifolds. Voice leadings become paths or line segments between chord-points. Efficient voice leading becomes short distance in the appropriate space.
+
+Two-note unordered pitch-class chords give the easiest picture: their quotient space is a Möbius strip. Three-note chord types can be represented in a cone-like quotient space. Higher-cardinality chords live in corresponding higher-dimensional spaces.
+
+This is useful because harmony and counterpoint are not independent. The geometry makes precise the fact that some chord families admit unusually short voice leadings to structurally similar chords. Near-symmetry under permutation, transposition, or reflection is what makes those short connections possible.
+
+F-sharp versus G-flat
+
+Tymoczko's framework and Ross Duffin's tuning argument attack different layers of the same apparent equivalence.
+
+In twelve-tone equal temperament, F-sharp and G-flat can be assigned the same pitch-class coordinate if pitch class is defined modulo twelve semitones. But Tymoczko's framework does not require every musically meaningful distinction to be erased. One chooses which equivalence relations to quotient by. Spelling, voice-leading path, scale membership, or functional context can therefore remain distinct even when sounding pitch is collapsed to the same equal-tempered point.
+
+This makes a useful implementation principle: do not bake enharmonic equivalence into the primitive note type. Keep at least these notions separable:
+
+- written/spelled note identity (F-sharp versus G-flat);
+- sounding pitch or frequency;
+- equal-tempered pitch-class coordinate;
+- scale or collection membership;
+- voice-leading path/history;
+- optional quotient/equivalence relation being used for a particular analysis.
+
+A geometry layer can then decide when F-sharp and G-flat are the same point and when they are different labelled paths or representatives of the same quotient point.
+
+Relation to Duffin
+
+Duffin is concerned with the acoustical fact that enharmonic spellings need not have the same frequency in non-equal temperaments. Tymoczko is concerned with geometrical and transformational structure. A future implementation should keep these orthogonal:
+
+sounding pitch = continuous quantity (frequency, cents, or logarithmic pitch coordinate)
+
+spelled pitch = symbolic/rational musical object
+
+geometry = space plus a chosen equivalence relation and metric
+
+temperament = mapping from symbolic pitch relations to sounding pitch
+
+That separation lets the same geometric progression be realized in 12-TET, meantone, just intonation, or another temperament without changing the abstract voice-leading object.
+
+Sources
+
+Oxford/Google Books description:
+https://books.google.com/books/about/A_Geometry_of_Music.html?id=5CNyPyKLfZEC
+
+Mathematical Association of America bibliographic entry and table of contents:
+https://old.maa.org/press/maa-reviews/a-geometry-of-music-harmony-and-counterpoint-in-the-extended-common-practice
+
+Princeton talk abstract describing two-note chords on a Möbius strip and three-note chord-types on a cone:
+https://www.math.princeton.edu/events/geometry-music-2011-04-12t210004
+
+Princeton overview of Tymoczko's chord geometry:
+https://www.princeton.edu/news/2006/07/06/composer-reveals-musical-chords-hidden-geometry
