@@ -1,0 +1,24 @@
+The Consecutive-Semitone Constraint on Scalar Structure: A Link Between Impressionism and Jazz
+Dmitri Tymoczko
+Intégral 11 (1997), pp. 135-179
+
+This is the earliest Tymoczko publication I found in the line that eventually leads toward A Geometry of Music. It is not yet the Möbius-strip/orbifold paper. Its importance is that it treats scales as structured objects constrained by intervallic relations rather than as mere named collections.
+
+The paper studies a 'consecutive-semitone constraint' on scale structure and uses it to connect harmonic/scalar practices in Impressionism and jazz. That concern with which scales permit which local motions is a precursor to Tymoczko's later treatment of scale space and voice-leading geometry.
+
+For this repository, the useful idea is to treat a scale as an ordered or cyclic structure with constraints, not simply a bit-mask of twelve pitch classes. Different scale representations should be able to preserve adjacency, step size, spelling, and later a temperament-dependent physical realization.
+
+Chronology note
+
+This is 1997, not the 1980s. I found no Tymoczko publication from the 1980s. A likely neighboring memory is John Roeder's 1987 'A Geometric Representation of Pitch-Class Series,' which appears in later music-theory bibliographies around this geometric tradition.
+
+Sources
+
+Intégral volume page:
+https://theory.esm.rochester.edu/integral/11-1997/
+
+Article landing page:
+https://theory.esm.rochester.edu/integral//11-1997/11-tymoczko/
+
+JSTOR volume record:
+https://www.jstor.org/stable/i40007324
