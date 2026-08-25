@@ -1,0 +1,19 @@
+Recasting K-nets
+Dmitri Tymoczko
+Music Theory Online 13(3), 2007
+
+What it is
+
+This short paper revisits Klumpenhouwer-network transformations and proposes a different numerical interpretation of their hyper-transpositions and hyper-inversions. Tymoczko shows that the operations can be represented as ordinary transpositions and inversions on equivalence classes in 24-tone equal temperament.
+
+Why it belongs in this lineage
+
+The paper is a useful example of a theme that becomes central in the geometry work: many apparently exotic music-theoretical operations become simpler after choosing the right ambient space and the right equivalence relation.
+
+It also reinforces a rule for this repository: do not confuse notation, tuning, and quotient structure. Twenty-four-tone equal temperament can be a mathematical ambient space for a transformation without asserting that the music was literally performed in 24-TET.
+
+For F-sharp versus G-flat, the analogous point is that a computational coordinate system is a model. It does not get to erase distinctions present in the source notation or tuning merely because those distinctions disappear under a particular quotient.
+
+Source
+
+Dmitri Tymoczko, "Recasting K-nets," Music Theory Online 13(3), 2007.
