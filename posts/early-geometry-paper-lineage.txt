@@ -1,0 +1,61 @@
+Early Tymoczko geometry / voice-leading paper lineage
+
+The dates are not the 1980s. Dmitri Tymoczko was born in 1969, and the publication trail relevant to A Geometry of Music begins in the early 2000s. In the acknowledgments to A Geometry of Music he specifically recalls fall 2004 exchanges with Clifton Callender and Ian Quinn, sometimes joined by Noam Elkies, about links between music and geometry.
+
+A useful reading order is:
+
+2002 — Stravinsky and the Octatonic: A Reconsideration
+Early scale-theoretic work. Not yet the chord orbifolds, but already separating distinct ingredients that later become scale, macroharmony, centricity, and voice-leading questions.
+
+2004 — Scale Networks and Debussy
+Scales become objects connected by small changes. This anticipates the book's treatment of modulation as voice leading between scales or macroharmonies.
+
+2005 — Voice Leadings as Generalized Key Signatures
+Very important for computation. Tymoczko uses continuous real-valued pitch coordinates, forms pitch-class space as R/12Z, and treats key signatures as paths in pitch-class space. This is also the most direct early paper for preserving spelling and directed alteration separately from acoustic endpoints.
+
+2006 — The Geometry of Musical Chords
+The decisive chord-geometry paper in Science. Chords are points, voice leadings are paths, quotient spaces are orbifolds, and two-note chord space gives the famous Möbius-strip example.
+
+2007 — Recasting K-nets
+A smaller but useful example of changing the ambient space/equivalence relation to simplify a musical transformation problem.
+
+2008 — Generalized Voice-Leading Spaces, with Clifton Callender and Ian Quinn
+The general OPTIC framework. Different combinations of octave, permutation, transposition, inversion, and cardinality equivalences generate different quotient spaces. This is the cleanest warning that there is no single universal notion of musical identity.
+
+2008 — Scale Theory, Serial Theory and Voice Leading
+Formalizes efficient voice leading and algorithms for minimal voice leadings between arbitrary chords; connects the geometry to scale theory, serialism, neo-Riemannian theory, jazz, Wagner, and Debussy.
+
+2008 — Set-Class Similarity, Voice Leading, and the Fourier Transform
+Separates voice-leading similarity from interval-content/Fourier similarity. Different musical metrics can correlate without being identical.
+
+2009 — Generalizing Musical Intervals
+Treats musical intervals as directed motions or paths when global transformation language is too coarse. This is useful whenever endpoints alone erase musically significant information.
+
+2009 — Three Conceptions of Musical Distance
+Explicitly separates voice-leading orbifolds, acoustical/tuning lattices, and interval-content quality spaces. This is the best bridge to Ross Duffin because it says directly that acoustical tuning distance and voice-leading geometry are different structures.
+
+2010 — Geometrical Methods in Recent Music Theory
+Clarifies the relation between continuous spaces and discrete graphs just before the book appears.
+
+2011 — A Geometry of Music
+Synthesizes this material into the book-length framework.
+
+The Möbius-strip connection
+
+The specific Möbius-strip idea belongs to the continuous geometry of two-note chords: after octave equivalence and permutation of the two notes are imposed, unordered dyads live in a Möbius-strip-shaped quotient space. The 2006 Science article is the key published entry point; Generalized Voice-Leading Spaces (2008) supplies the more general quotient-space machinery.
+
+Connection to Duffin and enharmonic spelling
+
+These papers suggest a representation richer than "pitch class = integer modulo 12."
+
+Keep separately:
+
+- written spelling;
+- tuning-relative sounding value;
+- exact ratio when available;
+- continuous log-frequency / cents coordinate;
+- scale or key context;
+- directed path / voice-leading information;
+- the particular equivalence relation used to derive a geometric quotient.
+
+Then F-sharp and G-flat may coincide under one projection, differ under another tuning, and remain distinct as spellings or paths throughout. That is preferable to making either "always equal" or "always unequal" a primitive axiom.
