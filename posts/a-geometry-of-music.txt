@@ -1,0 +1,49 @@
+A Geometry of Music: Harmony and Counterpoint in the Extended Common Practice
+Dmitri Tymoczko
+Oxford University Press, 2011
+ISBN 978-0-19-533667-2
+
+What the book is doing
+
+Tymoczko tries to describe tonal organization with a small set of ingredients rather than identifying tonality with one historical style. His five recurring features are conjunct melodic motion, acoustic consonance, harmonic consistency, limited macroharmony, and centricity. The geometric part of the book is mainly about the interaction between harmony and voice leading: chords become points in spaces, and voice leadings become paths between them.
+
+The geometry
+
+Pitch lives naturally on a line when octave matters and on a circle when octave equivalence is imposed. Chord spaces are then obtained by taking products of pitch space and quotienting by musical equivalences such as octave displacement and permutation of voices. These quotient spaces are often orbifolds rather than ordinary Euclidean spaces.
+
+The simplest striking example is two-note chord space. Once the order of the two notes is ignored, the resulting continuous space is a Möbius strip. Tymoczko uses higher-dimensional analogues for triads, seventh chords, scales, and other collections. Nearby points represent chords connected by small voice leadings.
+
+This is not merely a picture of twelve equal-tempered notes. Tymoczko's earlier work explicitly uses continuous real-valued pitch coordinates, so the geometry can contain microtones and arbitrary tunings. Twelve-tone equal temperament appears as a discrete subset of a continuous pitch-class circle, not as the definition of pitch space itself.
+
+F-sharp versus G-flat
+
+A bare pitch-class coordinate does not by itself distinguish F-sharp from G-flat if they have been assigned the same sounding pitch. That is a feature, not a reason to throw spelling away. There are at least three distinct things worth storing:
+
+1. sounding pitch: where the note lies in continuous pitch space;
+2. spelling or scale role: F-sharp versus G-flat, and the basic scale/key context that makes that spelling meaningful;
+3. path or voice-leading role: how the note got from one pitch-class position to another.
+
+Tymoczko's 2005 paper on generalized key signatures is particularly important here because it treats key signatures as collections of paths in pitch-class space and explicitly separates continuous pitch coordinates from letter naming. Two spellings can therefore share an acoustic endpoint while remaining distinct as notational or transformational objects.
+
+Implementation direction for this repository
+
+Do not make twelve-tone equal temperament the identity relation for notes.
+
+A useful representation should be able to carry, separately:
+
+- a symbolic spelling such as F-sharp or G-flat;
+- a continuous log-frequency coordinate;
+- an optional exact frequency ratio when a tuning supplies one;
+- an optional cents offset or floating-point approximation;
+- scale/key/tuning provenance;
+- a path or voice-leading object when the distinction depends on motion rather than only endpoints.
+
+This is also why Duffin and Tymoczko belong in the same repository. Duffin emphasizes the acoustical and historical consequences of tuning; Tymoczko supplies a continuous geometric language in which those pitch values and the paths among them can live.
+
+Sources
+
+Dmitri Tymoczko, A Geometry of Music: Harmony and Counterpoint in the Extended Common Practice, Oxford University Press, 2011.
+
+The book's introduction states that geometry provides spaces for voice-leading relations and gives the two-note Möbius strip as an example. Tymoczko also credits fall-2004 work with Clifton Callender and Ian Quinn as central to the development of the music-and-geometry ideas later used in the book.
+
+Related foundational papers in this repository include Voice Leadings as Generalized Key Signatures (2005), The Geometry of Musical Chords (2006), Generalized Voice-Leading Spaces (2008), and Three Conceptions of Musical Distance (2009).
