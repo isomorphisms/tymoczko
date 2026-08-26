@@ -1,4 +1,4 @@
-module Tymoczko.OPTIC
+module OPTIC
 
 %default total
 
@@ -54,7 +54,7 @@ all_chord_quotients =
 
 public export
 chord_quotient_count :
-  List.length Tymoczko.OPTIC.all_chord_quotients = 32
+  List.length OPTIC.all_chord_quotients = 32
 chord_quotient_count = Refl
 
 -- OPTI identifies octave, permutation, transposition, and inversion while
@@ -65,17 +65,17 @@ opti : chord_quotient
 opti = chord_equivalence identify identify identify identify preserve
 
 public export
-opti_identifies_octave : identified octave Tymoczko.OPTIC.opti
+opti_identifies_octave : identified octave OPTIC.opti
 opti_identifies_octave = Refl
 
 public export
 opti_identifies_permutation :
-  identified permutation Tymoczko.OPTIC.opti
+  identified permutation OPTIC.opti
 opti_identifies_permutation = Refl
 
 public export
 opti_preserves_cardinality :
-  chord_scope_of cardinality Tymoczko.OPTIC.opti = preserve
+  chord_scope_of cardinality OPTIC.opti = preserve
 opti_preserves_cardinality = Refl
 
 public export
@@ -123,7 +123,7 @@ all_progression_quotients =
 
 public export
 progression_quotient_count :
-  List.length Tymoczko.OPTIC.all_progression_quotients = 243
+  List.length OPTIC.all_progression_quotients = 243
 progression_quotient_count = Refl
 
 -- A uniform OP action applies one octave/permutation operation across the
@@ -135,10 +135,10 @@ uniform_op =
 
 public export
 uniform_op_has_uniform_octave :
-  acts_uniformly octave Tymoczko.OPTIC.uniform_op
+  acts_uniformly octave OPTIC.uniform_op
 uniform_op_has_uniform_octave = Refl
 
 public export
 uniform_op_has_uniform_permutation :
-  acts_uniformly permutation Tymoczko.OPTIC.uniform_op
+  acts_uniformly permutation OPTIC.uniform_op
 uniform_op_has_uniform_permutation = Refl

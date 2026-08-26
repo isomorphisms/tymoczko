@@ -1,7 +1,7 @@
 package tymoczko
 
 version = 0.1.0
-sourcedir = "src"
+sourcedir = "."
 
-modules = Tymoczko.OPTIC
+modules = OPTIC
 
