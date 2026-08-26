@@ -1,0 +1,144 @@
+module Tymoczko.OPTIC
+
+%default total
+
+-- The OPTIC policy layer from Callender, Quinn, and Tymoczko,
+-- "Generalized Voice-Leading Spaces" (2008).  This module records which
+-- information a quotient forgets.  It does not choose pitch coordinates,
+-- compute representatives, or claim that cardinality change is an isometry.
+
+public export
+choice optic_operation one_of
+  octave
+  permutation
+  transposition
+  inversion
+  cardinality
+
+public export
+choice chord_scope one_of
+  preserve
+  identify
+
+public export
+choice chord_quotient one_of
+  chord_equivalence chord_scope chord_scope chord_scope chord_scope chord_scope
+
+public export
+chord_scope_of : optic_operation -> chord_quotient -> chord_scope
+chord_scope_of octave        (chord_equivalence o p t i c) = o
+chord_scope_of permutation   (chord_equivalence o p t i c) = p
+chord_scope_of transposition (chord_equivalence o p t i c) = t
+chord_scope_of inversion     (chord_equivalence o p t i c) = i
+chord_scope_of cardinality   (chord_equivalence o p t i c) = c
+
+public export
+identified : optic_operation -> chord_quotient -> Type
+identified operation quotient =
+  chord_scope_of operation quotient = identify
+
+public export
+chord_scopes : List chord_scope
+chord_scopes = [preserve, identify]
+
+public export
+all_chord_quotients : List chord_quotient
+all_chord_quotients =
+  [ chord_equivalence o p t i c
+  | o <- chord_scopes
+  , p <- chord_scopes
+  , t <- chord_scopes
+  , i <- chord_scopes
+  , c <- chord_scopes
+  ]
+
+public export
+chord_quotient_count :
+  List.length Tymoczko.OPTIC.all_chord_quotients = 32
+chord_quotient_count = Refl
+
+-- OPTI identifies octave, permutation, transposition, and inversion while
+-- retaining cardinality.  The equality witnesses are compile-time fixtures:
+-- code that requires a missing identification cannot manufacture one.
+public export
+opti : chord_quotient
+opti = chord_equivalence identify identify identify identify preserve
+
+public export
+opti_identifies_octave : identified octave Tymoczko.OPTIC.opti
+opti_identifies_octave = Refl
+
+public export
+opti_identifies_permutation :
+  identified permutation Tymoczko.OPTIC.opti
+opti_identifies_permutation = Refl
+
+public export
+opti_preserves_cardinality :
+  chord_scope_of cardinality Tymoczko.OPTIC.opti = preserve
+opti_preserves_cardinality = Refl
+
+public export
+choice progression_scope one_of
+  no_action
+  uniform
+  individual
+
+public export
+choice progression_quotient one_of
+  progression_equivalence progression_scope progression_scope progression_scope progression_scope progression_scope
+
+public export
+progression_scope_of : optic_operation -> progression_quotient -> progression_scope
+progression_scope_of octave        (progression_equivalence o p t i c) = o
+progression_scope_of permutation   (progression_equivalence o p t i c) = p
+progression_scope_of transposition (progression_equivalence o p t i c) = t
+progression_scope_of inversion     (progression_equivalence o p t i c) = i
+progression_scope_of cardinality   (progression_equivalence o p t i c) = c
+
+public export
+acts_uniformly : optic_operation -> progression_quotient -> Type
+acts_uniformly operation quotient =
+  progression_scope_of operation quotient = uniform
+
+public export
+acts_individually : optic_operation -> progression_quotient -> Type
+acts_individually operation quotient =
+  progression_scope_of operation quotient = individual
+
+public export
+progression_scopes : List progression_scope
+progression_scopes = [no_action, uniform, individual]
+
+public export
+all_progression_quotients : List progression_quotient
+all_progression_quotients =
+  [ progression_equivalence o p t i c
+  | o <- progression_scopes
+  , p <- progression_scopes
+  , t <- progression_scopes
+  , i <- progression_scopes
+  , c <- progression_scopes
+  ]
+
+public export
+progression_quotient_count :
+  List.length Tymoczko.OPTIC.all_progression_quotients = 243
+progression_quotient_count = Refl
+
+-- A uniform OP action applies one octave/permutation operation across the
+-- progression, rather than choosing a separate operation for every chord.
+public export
+uniform_op : progression_quotient
+uniform_op =
+  progression_equivalence uniform uniform no_action no_action no_action
+
+public export
+uniform_op_has_uniform_octave :
+  acts_uniformly octave Tymoczko.OPTIC.uniform_op
+uniform_op_has_uniform_octave = Refl
+
+public export
+uniform_op_has_uniform_permutation :
+  acts_uniformly permutation Tymoczko.OPTIC.uniform_op
+uniform_op_has_uniform_permutation = Refl
